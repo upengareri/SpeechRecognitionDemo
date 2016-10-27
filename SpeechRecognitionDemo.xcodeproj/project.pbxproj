@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		1D3CFE5F1DC277E8009239D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3CFE5E1DC277E8009239D7 /* AppDelegate.swift */; };
-		1D3CFE611DC277E8009239D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3CFE601DC277E8009239D7 /* ViewController.swift */; };
+		1D3CFE611DC277E8009239D7 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3CFE601DC277E8009239D7 /* MainVC.swift */; };
 		1D3CFE641DC277E8009239D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D3CFE621DC277E8009239D7 /* Main.storyboard */; };
 		1D3CFE661DC277E8009239D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D3CFE651DC277E8009239D7 /* Assets.xcassets */; };
 		1D3CFE691DC277E8009239D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D3CFE671DC277E8009239D7 /* LaunchScreen.storyboard */; };
+		1D3CFE741DC27C96009239D7 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3CFE731DC27C96009239D7 /* RoundedButton.swift */; };
+		1D3CFE771DC27EE1009239D7 /* test.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1D3CFE761DC27EE1009239D7 /* test.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1D3CFE5B1DC277E8009239D7 /* SpeechRecognitionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechRecognitionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D3CFE5E1DC277E8009239D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1D3CFE601DC277E8009239D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1D3CFE601DC277E8009239D7 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		1D3CFE631DC277E8009239D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1D3CFE651DC277E8009239D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D3CFE681DC277E8009239D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D3CFE6A1DC277E8009239D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D3CFE731DC27C96009239D7 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		1D3CFE761DC27EE1009239D7 /* test.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,48 @@
 		1D3CFE5D1DC277E8009239D7 /* SpeechRecognitionDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1D3CFE721DC27805009239D7 /* Model */,
+				1D3CFE711DC277FF009239D7 /* View */,
+				1D3CFE701DC277F5009239D7 /* Controller */,
+				1D3CFE751DC27EC3009239D7 /* Resource */,
 				1D3CFE5E1DC277E8009239D7 /* AppDelegate.swift */,
-				1D3CFE601DC277E8009239D7 /* ViewController.swift */,
 				1D3CFE621DC277E8009239D7 /* Main.storyboard */,
 				1D3CFE651DC277E8009239D7 /* Assets.xcassets */,
 				1D3CFE671DC277E8009239D7 /* LaunchScreen.storyboard */,
 				1D3CFE6A1DC277E8009239D7 /* Info.plist */,
 			);
 			path = SpeechRecognitionDemo;
+			sourceTree = "<group>";
+		};
+		1D3CFE701DC277F5009239D7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1D3CFE601DC277E8009239D7 /* MainVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		1D3CFE711DC277FF009239D7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1D3CFE731DC27C96009239D7 /* RoundedButton.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1D3CFE721DC27805009239D7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1D3CFE751DC27EC3009239D7 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				1D3CFE761DC27EE1009239D7 /* test.m4a */,
+			);
+			name = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +162,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D3CFE771DC27EE1009239D7 /* test.m4a in Resources */,
 				1D3CFE691DC277E8009239D7 /* LaunchScreen.storyboard in Resources */,
 				1D3CFE661DC277E8009239D7 /* Assets.xcassets in Resources */,
 				1D3CFE641DC277E8009239D7 /* Main.storyboard in Resources */,
@@ -137,7 +176,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D3CFE611DC277E8009239D7 /* ViewController.swift in Sources */,
+				1D3CFE611DC277E8009239D7 /* MainVC.swift in Sources */,
+				1D3CFE741DC27C96009239D7 /* RoundedButton.swift in Sources */,
 				1D3CFE5F1DC277E8009239D7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +301,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UG7QE944RA;
 				INFOPLIST_FILE = SpeechRecognitionDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.upengareri.SpeechRecognitionDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,6 +315,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UG7QE944RA;
 				INFOPLIST_FILE = SpeechRecognitionDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.upengareri.SpeechRecognitionDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
